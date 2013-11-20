@@ -2,6 +2,6 @@ name: Coigres
 markdown: redcarpet
 pygments: true
 permalink: 	none
-port:				5000
+port:				6000
 paginate: 5
 paginate_path: "list/:num"
