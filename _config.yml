@@ -1,7 +1,7 @@
-name: Coigres
+name: yinkou
 markdown: redcarpet
 pygments: true
 permalink: 	none
-port:				6000
+port:				8888
 paginate: 5
 paginate_path: "list/:num"
