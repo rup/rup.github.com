@@ -983,7 +983,10 @@ a:hover {
   margin: 0 auto!important;
 }
 
+.imageareaContent {
+  text-align: center;
+}
+
 .imageareaContent img {
   max-width: 600px;
-  _width:;
 }
