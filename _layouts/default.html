@@ -1,91 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="/js/common.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
 
-     
+  </head>
+  <body>
+    
+    <div id="wrapper">
+      <div id="header">
 
-        <!-- main JS libs -->
-        <script src="/PixelKit/modern-touch/modern-touch-css/js/libs/modernizr.min.js"></script>
-        <script src="/PixelKit/modern-touch/modern-touch-css/js/libs/jquery-1.10.0.js"></script>
-        <script src="/PixelKit/modern-touch/modern-touch-css/js/libs/jquery-ui.min.js"></script>
-        <script src="/PixelKit/modern-touch/modern-touch-css/js/libs/bootstrap.min.js"></script>
+        <h1 id="site-title">
+          <a href="/">{{ site.name }}</a>
+        </h1>
+        <div id="tagline"></div>
 
-        <script src="/PixelKit/modern-touch/modern-touch-css/js/general.js"></script>
-        <script src="/PixelKit/modern-touch/modern-touch-css/js/jquery.powerful-placeholder.min.js"></script>
-        <script src="/PixelKit/modern-touch/modern-touch-css/js/jquery-ui.multidatespicker.js"></script>
-        <script src="/js/common.js"></script>
-
-        <!-- Style CSS -->
-        <link href="/PixelKit/modern-touch/modern-touch-css/css/bootstrap.css" media="screen" rel="stylesheet">
-        <link href="/PixelKit/modern-touch/modern-touch-css/style.css" media="screen" rel="stylesheet">
-        
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="container">
-          <div class="content">
-            <div class="row header">
-              <div class="col-sm-12">
-                <div class="title"><a href="/">{{ site.name }}</a></div>
-
-                <div id="topmenu">
-                  <ul class="dropdown clearfix boxed boxed-blue">
-                      <li class="link-more"><a href="#"><i></i></a></li>
-                      <li><a href="/"><span>Home</span></a></li>
-                      <li><a href="#"><span>Services</span></a>
-                          <ul>
-                              <li><a href="#">Link 1</a></li>
-                              <li><a href="#">Link 2</a></li>
-                              <li><a href="#">Link 3</a>
-                                  <ul>
-                                      <li><a href="#">Link 4</a></li>
-                                      <li><a href="#">Link 5</a></li>
-                                      <li><a href="#">Link 6</a></li>
-                                  </ul>
-                              </li>
-                          </ul>
-                      </li>
-                      <li><a href="#"><span>About</span></a></li>
-                      <li class="menu-search">
-                          <form id="searchForm" class="menu-search-form" method="post">
-                              <input type="text" name="search" value="" class="menu-search-field" placeholder="Search the website" />
-                              <input type="submit" value="" class="btn menu-search-submit" name="search-send" />
-                          </form>
-                      </li>
-                  </ul>
-                </div>
-              
-                
-              </div>
-
-            </div>
-
-            {{ content }}
-
-            <div class="row footer">
-              <div class="col-sm-12">
-                <div class="contact">
-                  <ul>
-                    <li>Rupert qin</li>
-                    <li>conveyr@qq.com</li>
-                    <li><a href="http://github.com/rupertqin/">github.com/rupertqin</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-          </div>
+        <div class="menu-header">
+          <ul id="menu-%e8%8f%9c%e5%8d%95" class="menu">
+            <li id="menu-item-43" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43"><a href="/">首页</a></li>
+            <li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="http://121.199.42.244/?page_id=54">关于尹口</a></li>
+            <li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="http://121.199.42.244/?page_id=59">服务报价</a></li>
+            <li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a href="http://121.199.42.244/?page_id=57">联系我们</a></li>
+          </ul>
         </div>
+      </div>
 
-    </body>
+      <div id="content">
+        {{ content }}
+      </div>
+
+      <div id="footer">
+      <strong><a href="http://121.199.42.244/" title="尹口影像" rel="home">尹口影像</a></strong>
+      <br>
+      <script src="http://s4.cnzz.com/stat.php?id=3882387&amp;web_id=3882387&amp;show=pic" language="JavaScript"></script>      </div>
+
+    </div>
+
+  </body>
 </html>
